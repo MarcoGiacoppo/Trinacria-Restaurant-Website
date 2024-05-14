@@ -12,15 +12,6 @@
         <div class="box-container">
 
             <div class="box">
-                <h3>our menu</h3>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> pasta & risotto</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> pizza & breads</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Seafood</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> dessert</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> drinks</router-link>
-            </div>
-
-            <div class="box">
                 <h3>quick links</h3>
                 <router-link @click="scrollToTop()" to="/"> <i class="fas fa-arrow-right"></i> home</router-link>
                 <router-link @click="scrollToTop()" to="/about"> <i class="fas fa-arrow-right"></i> about</router-link>
@@ -60,7 +51,6 @@
                 <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
                 <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
                 <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                <a href="https://www.pinterest.com/" class="fab fa-pinterest"></a>
             </div>
 
         </div>

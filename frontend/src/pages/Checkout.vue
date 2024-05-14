@@ -134,7 +134,7 @@ export default {
         calculateSummaryPrice: function () {
             let subtotal = 0;
             let discount = 0;
-            let delivery = 15;
+            let delivery = 10;
             let i = 0;
             while (i < this.itemQuantity.length) {
                 subtotal = subtotal + parseInt(this.filterFoods[i].food_price) * this.itemQuantity[i]

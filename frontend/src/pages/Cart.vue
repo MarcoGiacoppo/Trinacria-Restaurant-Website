@@ -2,8 +2,7 @@
     <div class="shopping-cart-section">
 
         <div class="heading">
-            <span>Shopping cart</span>
-            <h3>Good products, fast delivery</h3>
+            <span>Your Order</span>
         </div>
 
         <div class="container">
@@ -23,7 +22,7 @@
                             <div v-if="!filterFoods.length">
                                 <div class="box-content row no-food">
                                     <div class="content">
-                                        <h2 style="color: #057835fa;">You do not have any items in your cart, go shop now!</h2>
+                                        <h2 style="color: #ff4545;">You do not have any items in your cart, go shop now!</h2>
                                     </div>
                                     <div class="image">
                                         <img src="../assets/images/notfound.png" alt="" />
@@ -45,8 +44,8 @@
                                                 <p>{{ f.food_desc }}</p>
                                             </div>
                                             <button class="btn remove-btn" @click="removeBtn(index)"><i
-                                                    class="fa fa-trash"></i>Remove
-                                                item</button>
+                                                    class="fa fa-trash"></i>Remove item
+                                            </button>
                                         </div>
 
                                         <div class="item-price col-sm-1">
@@ -128,9 +127,7 @@
                         </div>
 
                         <div class="box">
-                            <div class="box-title">
-                                <h3>Support</h3>
-                            </div>
+
                             <div class="box-content text-center">
                                 <h3><i class="fa fa-phone"></i> +61 123 123 123</h3>
                                 <span class="small">
@@ -190,7 +187,7 @@ export default {
         calculateSummaryPrice: function () {
             let subtotal = 0;
             let discount = 0;
-            let delivery = 15;
+            let delivery = 10;
             let i = 0;
             while (i < this.itemQuantity.length) {
                 subtotal = subtotal + parseInt(this.filterFoods[i].food_price) * this.itemQuantity[i]

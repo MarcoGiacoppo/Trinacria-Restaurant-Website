@@ -36,7 +36,7 @@ export default {
 
 .about-section {
     padding: 2rem 9%;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .about-section .about-content {

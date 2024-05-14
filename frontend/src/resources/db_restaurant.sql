@@ -105,7 +105,8 @@ CREATE TABLE booktable(
     book_people INT,
     book_tables INT,
     user_id INT,
-    book_when VARCHAR(255),
+    book_date DATE,
+    book_time TIME(4),
     book_note TEXT
 ) ENGINE=INNODB;
 

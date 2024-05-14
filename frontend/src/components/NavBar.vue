@@ -1,6 +1,7 @@
 <template>
     <div class="header">
-        <router-link @click="scrollToTop()" to="/" class="logo">Trinacria Ristorante
+        <router-link @click="scrollToTop()" to="/" >
+            <img src="/logo.png" alt="Trinacria Ristorante Logo" class="logo">    
         </router-link>
 
         <nav class="navbar">
@@ -109,16 +110,6 @@ export default {
     padding: 2rem 9%;
 }
 
-.header .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #ff4545;
-}
-
-.header .logo img {
-    padding-right: .5rem;
-}
-
 .header .navbar a {
     font-size: 1.7rem;
     margin: 0 1rem;
@@ -133,13 +124,18 @@ export default {
     color: #e60e0e;
 }
 
+.logo{
+    max-width: 100px;
+    height: 50px;
+}
+
 .header .icons {
-    display: flex; /* Ensures flexbox layout */
-    justify-content: space-between; /* Distributes space between icons evenly */
-    align-items: center; /* Centers icons vertically */
-    flex-wrap: nowrap; /* Prevents wrapping into a new line */
-    width: auto; /* Adjusts width to content */
-    padding: 0 1rem; /* Optional: Adjusts padding */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: auto; 
+    padding: 0 1rem;
 }
 
 .header .icons div {

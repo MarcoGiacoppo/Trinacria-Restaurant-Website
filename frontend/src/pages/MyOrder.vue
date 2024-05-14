@@ -67,7 +67,7 @@
 
         <div v-else class="box-content row no-food">
             <div class="content">
-                <h2 style="color: #057835fa;">You do not have any orders yet</h2>
+                <h2 style="color: #ff4545;">You do not have any orders yet</h2>
             </div>
             <div>
                 <img src="../assets/images/no-orders.png" alt="" />

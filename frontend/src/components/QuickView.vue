@@ -32,8 +32,7 @@
                 <slot></slot>
             </h2>
             <div class="link-to-login" style="text-align: center; margin-top: 120px;">
-                <router-link class="btn" to="/login" style="padding: 28px; font-size: 24px">login now
-                </router-link>
+                <router-link @click="scrollToTop()" to="/login" style="padding: 28px; font-size: 24px">login now</router-link>
             </div>
         </div>
     </div>
@@ -62,6 +61,9 @@ export default {
     },
 
     methods: {
+        scrollToTop() {
+            window.scrollTo(0, 0);
+        },
         onQtyChange: function (e) {
             if (e.target.value < 1) {
                 e.target.value = 1;
