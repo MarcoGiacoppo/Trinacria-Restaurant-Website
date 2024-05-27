@@ -188,7 +188,7 @@ export default {
                     this.errorObj.phoneErr.push('Phone numbers must have exactly 10 digits');
                 }
 
-                if (!/[0-9]{11}/.test(this.registerObj.phone)) {
+                if (!/[0-9]{10}/.test(this.registerObj.phone)) {
                     this.errorObj.phoneErr.push('Phone numbers can only contain numbers');
                 }
             }
