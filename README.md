@@ -1,5 +1,7 @@
 # Trinacria Restaurant Ordering System
 
+Check the frontend part here : https://trinacria.vercel.app/
+
 ## Introduction
 
 This Restaurant Ordering System is designed to facilitate seamless order placements and management in a restaurant setting. The application features a dynamic menu where customers can select dishes, view descriptions, adjust quantities, and place orders. It supports filtering by dish type, price range, and other attributes, offering an intuitive user experience.
